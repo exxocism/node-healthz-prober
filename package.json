@@ -1,0 +1,26 @@
+{
+  "name": "healthz-prober",
+  "version": "1.0.0",
+  "description": "probes healthz endpoints and reports to slack",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/exxocism/node-healthz-prober.git"
+  },
+  "keywords": [
+    "node",
+    "healthz",
+    "prober",
+    "slack",
+    "report"
+  ],
+  "author": "exxocism (Charlie)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/exxocism/node-healthz-prober/issues"
+  },
+  "homepage": "https://github.com/exxocism/node-healthz-prober#readme"
+}
