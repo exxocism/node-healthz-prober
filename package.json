@@ -8,7 +8,7 @@
     "start:watch": "node --env-file=.env --watch dist/index.js",
     "build": "tsc",
     "build:watch": "tsc -w",
-    "dev": "(start npm run build:watch || exec npm run build:watch) & npm run start & wait",
+    "dev": "(start npm run build:watch || npm run build:watch) & npm run start:watch",
     "clean": "rm -rf dist || rmdir /s/q dist || rmdir -r -Force dist",
     "runtime": "(npm run clean || echo .) && npm run build && npm run runtime:nodejs && npm run runtime:blob && npm run runtime:assemble",
     "runtime:blob": "node --env-file=.env --experimental-sea-config sea-config.json",
