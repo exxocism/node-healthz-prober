@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/exxocism/node-healthz-prober#readme",
   "devDependencies": {
+    "postject": "^1.0.0-alpha.6",
     "typescript": "^5.3.2"
   }
 }
