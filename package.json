@@ -16,7 +16,7 @@
     "runtime:assemble": "(start exit && npm run runtime:assemble:windows) || (test `uname` = 'Linux') && npm run runtime:assemble:linux || npm run runtime:assemble:macos",
     "runtime:assemble:windows": "postject dist\\executable.exe NODE_SEA_BLOB dist\\compiled.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2",
     "runtime:assemble:linux": "postject dist/executable NODE_SEA_BLOB dist/compiled.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2",
-    "runtime:assemble:macos": "echo not yet implemented",
+    "runtime:assemble:macos": "codesign --remove-signature dist/executable && postject dist/executable NODE_SEA_BLOB dist/compiled.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2 --macho-segment-name NODE_SEA && codesign --sign - dist/executable",
     "test": "jest"
   },
   "repository": {
