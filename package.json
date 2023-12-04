@@ -4,6 +4,12 @@
   "description": "probes healthz endpoints and reports to slack",
   "main": "index.ts",
   "scripts": {
+    "start": "node --watch dist/index.js",
+    "start:watch": "node --watch dist/index.js",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "dev": "(start npm run build:watch || exec npm run build:watch) & npm run start & wait",
+    "clean": "rm -rf dist || rmdir /s/q dist || rmdir -r -Force dist",
     "test": "jest"
   },
   "repository": {
