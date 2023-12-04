@@ -2,7 +2,7 @@
   "name": "healthz-prober",
   "version": "1.0.0",
   "description": "probes healthz endpoints and reports to slack",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "start": "node --env-file=.env --watch dist/index.js",
     "start:watch": "node --env-file=.env --watch dist/index.js",
