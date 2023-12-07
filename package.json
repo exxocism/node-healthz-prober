@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "probes healthz endpoints and reports to slack",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
     "start": "npm run build && node --env-file=.env dist/index.js",
     "start:watch": "node --env-file=.env --watch dist/index.js",
-    "build": "tsc",
+    "build": "tsc && vite build",
     "build:watch": "tsc -w",
     "dev": "(start npm run build:watch || npm run build:watch) & npm run start:watch & (test `uname` = 'Darwin' && wait)",
     "clean": "rm -rf dist || rmdir /s/q dist || rmdir -r -Force dist",
