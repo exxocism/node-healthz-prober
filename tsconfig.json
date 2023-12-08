@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "Node16",
+    "module": "CommonJS",
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "node"
   }
 }
