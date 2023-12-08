@@ -6,7 +6,6 @@ export default ({ mode }) => {
     build: {
       rollupOptions: {
         plugins: [commonjs()],
-        // overwrite default .html entry
         input: 'dist/index.js',
         output: {
           manualChunks: false,
