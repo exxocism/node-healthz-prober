@@ -8,5 +8,5 @@ export const sendToSlack = ({ webhookEndpoint, data }: SlackWebhook) => {
       'Content-Type': 'application/json',
     },
   };
-  fetch(webhookEndpoint, payload);
+  return fetch(webhookEndpoint, payload);
 };
