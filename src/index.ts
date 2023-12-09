@@ -13,4 +13,6 @@ const mainFunction = () => {
   }
 };
 
+console.log('Node prober has started...');
 mainFunction();
+console.log('Finished probing.');
